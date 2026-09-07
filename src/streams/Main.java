@@ -100,6 +100,7 @@ public class Main {
                 .sorted(Comparator.comparing(e -> -1 * e.getSalary()))
                 .limit(2).toList();
 
+//        sort by salary then by name
         List<Employee> list = employees.stream()
                 .sorted(Comparator.comparing(Employee::getSalary).reversed().thenComparing(Comparator.comparing(Employee::getName)))
                 .limit(2).toList();

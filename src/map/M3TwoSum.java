@@ -12,6 +12,7 @@ public class M3TwoSum {
             int needed = target-array[i];
             if(map.containsKey(needed)){
                 System.out.println(map.get(needed)+" " +i);
+                break;
             }
 
             map.put(array[i], i);

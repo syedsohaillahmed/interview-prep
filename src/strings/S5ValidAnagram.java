@@ -23,7 +23,7 @@ public class S5ValidAnagram {
         }
 
         for (Integer num:array){
-            if(num!=0){
+            if(num!=0) {
                 System.out.println("not anagram");
             }
         }
@@ -32,7 +32,7 @@ public class S5ValidAnagram {
 
     static void main() {
         String s1= "anagram";
-        String s2 = "nagarams";
+        String s2 = "nagaram";
         checkAnagram(s1, s2);
 
 
